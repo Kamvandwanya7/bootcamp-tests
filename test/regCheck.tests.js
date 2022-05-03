@@ -9,11 +9,11 @@ describe('test my regCheck function', function () {
     //     assert.equal(true, regCheck("FGT 491 L", "EC"));
     // });
     it('it should return "false" when registration number does not end with location', function () {
-        assert.equal(false, regCheck("WV 55 HN GP"));
+        assert.equal(false, regCheck("ND 123-456", "L"));
     });
 
     it('it should return "false" when registration number does not end with location', function () {
-        assert.equal(false, regCheck("CV45 HN GP"));
+        assert.equal(false, regCheck("CY 678-453", "GP"));
     });
 
 });
